@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Small City 3D with Textured Spheres</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Blue sky background -->
+      <a-sky color="#87CEEB"></a-sky>
+
+      <!-- Snow-like ground -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#FFFFFF"></a-plane>
+
+      <!-- Spheres with textured materials -->
+      <a-sphere id="house1" position="-10 0 -20" radius="4" src="https://static.vecteezy.com/system/resources/previews/000/134/365/original/vector-brick-wall-texture.jpg" ></a-sphere>
+
+      <a-sphere id="house2" position="0 0 -20" radius="3" src="https://static.vecteezy.com/system/resources/previews/000/134/365/original/vector-brick-wall-texture.jpg" ></a-sphere>
+
+      <a-sphere id="house3" position="10 0 -20" radius="2.5" src="https://static.vecteezy.com/system/resources/previews/000/134/365/original/vector-brick-wall-texture.jpg"></a-sphere>
+
+      <!-- Parks or Green Areas -->
+      <a-cylinder position="15 0 -15" radius="8" height="0.1" color="#228B22"></a-cylinder>
+
+      <a-entity position="-5 0 -20">
+        <a-box position="1 0.5 0" width="1" height="1" depth="1" color="#FFFF00"></a-box>
+      </a-entity>
+
+      <!-- Camera and Controls -->
+      <a-entity camera look-controls position="0 1.6 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
